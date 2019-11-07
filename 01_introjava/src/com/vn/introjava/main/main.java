@@ -6,7 +6,10 @@
 package com.vn.introjava.main;
 
 import static com.vn.introjava.funcionesbasicas.Ordenamiento.ordenarArray;//METODO IMPORTADO
-import java.util.Random;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import com.vn.introjava.poo.Coche;
+import com.vn.introjava.poo.FabricaCoches;
 
 /**
  *
@@ -20,6 +23,20 @@ public class main {
      */
     public static void main(String[] args) {
          ordenarArray();
+         
+         try{
+        
+    Coche c=FabricaCoches.crear("Seat");
+    c.mostrarEstado();
+    c = FabricaCoches.crear(null);
+    c.mostrarEstado();}
+    
+    catch(Exception ex){
+    
+    Logger.getLogger(main.class.getName()).log(Level.SEVERE,null,ex);
+    
+    }
+         
          /*
         Operadores.probarOperadores();
         Numero.queNumeroEs();
