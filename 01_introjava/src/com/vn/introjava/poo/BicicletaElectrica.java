@@ -5,30 +5,29 @@
  */
 package com.vn.introjava.poo;
 
-
+import com.vn.introjava.poo.interfaces.Desplazable;
+import com.vn.introjava.poo.interfaces.Electrico;
 
 /**
  *
  * @author Equipo 4
  */
-public class Tractor extends Vehiculo {
+public class BicicletaElectrica implements Electrico,Desplazable {
 
     @Override
-    public void avanzar() {
-        System.out.println("Ruedo y siego");
-    }
-
-    @Override
-    public String toString() {
+    public void cargar(double voltios) {
         
-        return "TIPO: "+tipo.toString();
-        
+        System.out.println("Bici se carga");
     }
 
     @Override
     public void mover(float metros) {
-        avanzar();
-        System.out.println(metros+" metros");
+        System.out.println("Bici se mueve");
     }
+    
+    
+    
+    
+    
     
 }

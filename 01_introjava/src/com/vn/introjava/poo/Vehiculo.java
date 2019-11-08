@@ -5,12 +5,14 @@
  */
 package com.vn.introjava.poo;
 
+import com.vn.introjava.poo.interfaces.Desplazable;
+
 
 /**
  *
  * @author Equipo 4
  */
-public abstract class  Vehiculo {
+public abstract class  Vehiculo implements Desplazable {
     
     protected TipoVehiculo tipo;
 

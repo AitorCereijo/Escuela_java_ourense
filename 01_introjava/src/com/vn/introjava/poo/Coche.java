@@ -125,7 +125,10 @@ public class Coche extends Vehiculo {
         
       
     }
-   
+   public void mover(float f){
+   avanzar();
+       System.out.println(f+ " metro");
+   }
     
     
 }
