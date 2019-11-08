@@ -6,6 +6,7 @@
 package com.vn.introjava.tests.poo;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.TreeSet;
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -16,15 +17,16 @@ import static org.junit.Assert.*;
  */
 public class Probar_hash_set {
  
-
+/*
      @Test
      public void probar_hashmap() {
      
          HashMap<String ,String> lista=new HashMap<String ,String>();
          lista.put("a","b");
          lista.put("c","d");
-         
-         System.out.println(lista);
+         Iterator a = lista.entrySet().iterator();
+        while (a.hasNext()) {
+         System.out.println(lista);}
       
      }
      
@@ -41,7 +43,7 @@ public class Probar_hash_set {
          
     
      }
-     
+     */
      
      
 }
