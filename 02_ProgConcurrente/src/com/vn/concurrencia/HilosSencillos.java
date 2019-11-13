@@ -12,13 +12,14 @@ package com.vn.concurrencia;
 public class HilosSencillos {
     
      static int contador_compartido=0;
+     
       HiloA hiloA;
       HiloB hiloB;
      
     public HilosSencillos() {
         
-        this.hiloA = hiloA;
-        this.hiloB = hiloB;
+        this.hiloA = new HiloA();
+        this.hiloB = new HiloB();
        
     }
       

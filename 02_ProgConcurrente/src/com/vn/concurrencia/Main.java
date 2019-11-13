@@ -16,12 +16,10 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-       
+        /*
         HilosSencillos hilo=new HilosSencillos();
-        
-        
-        
-        hilo.ejecturarHilosRunAB();
+      
+       hilo.ejecturarHilosRunAB();
         
         long timeIni=System.currentTimeMillis();
         
@@ -30,9 +28,13 @@ public class Main {
         
    
         hilo.ejecutarHilosAB();
-         mostrar_tiempo(timeIni,"Start en paralelo ha tardado: ");
+         mostrar_tiempo(timeIni,"Start en paralelo ha tardado: ");*/
         
         
+        //EJERCICIO ARRAY DE HILOS
+        Array_hilos hilo2=new Array_hilos();
+        hilo2.ejecutarHilosArray();
+         
     }
     
     static String mostrar_tiempo(long timeInicial,String mensaje){
