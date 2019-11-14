@@ -5,6 +5,8 @@
  */
 package com.vn.concurrencia;
 
+import java.util.HashSet;
+
 /**
  * EJERCICIO ARRAY DE HILOS
  *
@@ -17,7 +19,7 @@ public class Array_hilos {
     public Array_hilos() {
 
         this.hilo_array = new HiloA[20];
-
+        
     }
 
     class HiloA implements Runnable {
@@ -38,7 +40,6 @@ public class Array_hilos {
 
         System.out.println("*******START*********");
 
-        hilo_array = new HiloA[20];
 
         for (int i = 0; i < hilo_array.length; i++) {
 
