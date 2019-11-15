@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+		
+<head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link href="estilos/02_ejemplo_css3.css" rel="stylesheet" type="text/css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link   rel="icon"   href="images/sasuke.png" type="image/png">
+	<title>Segunda página 
+    </title>
+</head>
+<body>
+    <div class="container">
+    
+        <h1  id="subrayado" class="titulo"> <img src="images/baloncesto.jpg" class="borde-img" alt="LOG" style="margin-bottom:10px;"/>T&iacutetulo de la web</h1>
+    
+       
+            <nav class="navbar navbar-expand navbar-light bg-light menu">
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item " ><a class="nav-link" href="01_estructura_html5.html">Menu principal</a></li>
+                        <li  class="nav-item" ><a class="nav-link" href="02_ejemplo_css3.css">CSS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="03_formularios.html">FORMULARIO</a></li>
+                        <li class="nav-item "><a class="nav-link" href="04_ejemplos_js.html">JAVASCRIPT</a></li>
+                        <li class="nav-item active "> <a href="https://euw.leagueoflegends.com/es/"> <img  src="images/renekton.jpg" class="renek" alt="LOG" /></a></li>
+            
+                    </ul>
+                </dive>
+            </nav>
+           
+            <header>
+           
+            </header>
+           
+            <table class="table table-striped table-bordered table-hover table-sm">
+					<thead class="thead-dark">
+					<tr>
+						<th class="col-2">Nombre</th>
+						<th class="col-2">Apellidos</th>
+						<th class="col-2">Edad</th>
+						<th class="col-2">Email</th>
+						<th  class="col-2"s>Tlf</th>
+                    </tr>
+                    </thead>
+                    <tbody class="thead.light">
+					<tr>
+						<td>Ana</td>
+						<td>Perez</td>
+						<td>25</td>
+						<td><a href="mailto:ana.perez@hotmail.com">email</a></td>
+						<td><a href="tel://911111111">tlf</a></td>
+                    </tr>
+                    <tr>
+                            <td>Maokai</td>
+                            <td>Árbol</td>
+                            <td>50</td>
+                            <td><a href="mailto:maokai@hotmail.com">email</a></td>
+                            <td><a href="tel://911">tlf</a></td>
+                        </tr>
+                        <tr>
+                                <td>Ramon</td>
+                                <td>Perez</td>
+                                <td>30</td>
+                                <td><a href="mailto:ana.perez@hotmail.com">email</a></td>
+                                <td><a href="tel://911111111">tlf</a></td>
+                            </tr>
+                    </tbody>
+                </table>
+                
+                <section class="row"  style="text-align: center;">
+                        <h2 class="col-12">Encabezado nivel 2,como título secundario</h2>
+                        <h3 class="col-12">Encabezado nivel 3,otros titulos</h3>
+                        
+                        <article class="articulo">
+                            <h4>Aqui iria un articulo Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem hic aspernatur sint nemo officia tenetur maxime? Magni consectetur aut, neque voluptate nulla consequatur, culpa hic in sunt vel sed quisquam.</h4>
+                            Con el texto que sea blablablablabla 
+                        </article>
+                        <article class="articulo">
+                                <h4>Con media</h4>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fuga sint expedita aliquam possimus? Doloremque esse ut incidunt? Reprehenderit quidem ratione necessitatibus praesentium magnam aliquam earum eius autem alias dolores?
+                                Con el texto que sea blablablablabla.......... 
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro facere facilis deserunt eius ipsa similique ut, inventore qui non culpa saepe optio voluptate, aut corrupti voluptatum, cupiditate sequi dolore quisquam?
+                        </article>
+                        <article class="col-lg-6">
+                                <h4>Con bootstrap</h4>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fuga sint expedita aliquam possimus? Doloremque esse ut incidunt? Reprehenderit quidem ratione necessitatibus praesentium magnam aliquam earum eius autem alias dolores?
+                                Con el texto que sea blablablablabla.......... 
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro facere facilis deserunt eius ipsa similique ut, inventore qui non culpa saepe optio voluptate, aut corrupti voluptatum, cupiditate sequi dolore quisquam?
+                        </article>
+        
+                            <video class="col-6" src="images/video.mp4" controls="true">
+                            </video>
+                </section>
+        
+            </div>
+
+            <section class="container formulario">
+                <div class="ofset-3 col-6" >
+                    <h1 class="offset-2 col-8 row">Formulario</h1>
+                    <div class="offset-2 col-8 row">
+            <form id="form-registro" name="form_registro" action="#" method="get">
+               
+                <input id="nombre" name="nombre" class="col-10 input form-control" placeholder="Nombre" size="15" id="nombre" maxlength="10" required/>
+                <input id="apellidos" name="apellidos" class="col-10  input form-control" placeholder="Apellidos" size="30" maxlength="10"/>
+                <input id="email" name="email" type="email" class="col-10  input form-control" placeholder="Email" size="30" maxlength="20"/>
+                <input  value ="24"type="number" id="edad" name="edad" class="col-10 input form-control"  input" placeholder="Edad" size="30"/>
+                <input type="date" id="fecha" name="fecha" class="col-10 form-control input" type="date" size="30" maxlength="10"/>
+                <input class="col-5 btn btn-success boton" type="submit" value="Enviar"/>
+                <input class="col-5 btn btn-danger boton" type="reset" value="Limpiar" />
+                <input class="col-10 btn btn-primary boton " type="button" value="Rellenar" onclick="document.forms.form_registro.nombre.value='Fulano'"/>
+                
+            </form>
+        </div>
+    </div>
+        </section>
+    </body>
+    </html>
+    
