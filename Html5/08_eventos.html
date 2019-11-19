@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eventos</title>
+</head>
+<body>
+    
+<label>Evento con listener</label>
+<input id="input_listo"/>
+<input id="boton_listo" type="button"/>
+<div id="info_evento"></div>
+
+<label>Evento 2 con listener</label>
+<input id="input_listo2"/>
+<input id="boton_listo2" type="button"/>
+<div id="info_evento2"></div>
+
+<br/>
+
+<script>
+
+/*
+let input_listo=document.getElementById("input_listo");
+let boton_listo=document.getElementById("boton_listo");
+
+let input_listo2=document.getElementById("input_listo2");
+let boton_listo2=document.getElementById("boton_listo2");
+
+boton_listo.value="Pulsa";
+boton_listo.addEventListener("click", funAlPulsar);
+boton_listo.addEventListener("click", funAlpulsar_dos);
+
+boton_listo2.value="Pulsa";
+boton_listo2.addEventListener("click", funAlPulsar);
+boton_listo2.addEventListener("click", funAlpulsar_dos);*/
+
+
+
+
+function Gestor(input,boton,div){
+    
+    this.boton=document.getElementById(boton);
+    boton.addEventListener("click",funAlPulsar);
+
+    let div=document.getElementById(div);
+    this.input=document.getElementById(input);
+
+this.funAlPulsar=function(evento){
+
+    this.input.value="Muy bien "+evento.type;
+    div.innerHTML+="evento.currentTarget.id= "+evento.currentTarget.id;
+    div.className="div-marco";
+    
+}
+}
+
+var gestor1=new Gestor("input_listo","boton_listo","info_evento");
+var gestor2=new Gestor("input_listo2","boton_listo2","info_evento2");
+
+/*
+function funAlPulsar(evento){
+
+if(evento.currentTarget===boton_listo){
+
+let info_evento=document.getElementById("info_evento");
+input_listo.value="Muy bien , tonto "+evento.type;
+evento.currentTarget.value="Puedes repetir";
+info_evento.innerHTML+="evento.currentTarget.id= "+evento.currentTarget.id;
+info_evento.className="div-marco";
+boton_listo.removeEventListener("click",funAlPulsar);}
+
+else if(evento.currentTarget===boton_listo2){
+
+let info_evento2=document.getElementById("info_evento2");
+input_listo2.value="Muy bien , tonto "+evento.type;
+evento.currentTarget.value="Puedes repetir";
+info_evento2.innerHTML+="evento.currentTarget.id= "+evento.currentTarget.id;
+info_evento2.className="div-marco";
+boton_listo2.removeEventListener("click",funAlPulsar);}
+
+}
+
+function funAlpulsar_dos(evento2){
+
+if(evento2.currentTarget==boton_listo){
+document.getElementsByTagName("body")[0].className="fondo-body";}
+if(evento2.currentTarget==boton_listo2){
+document.getElementsByTagName("body")[0].className="fondo-body2";}
+
+}*/
+
+</script>
+
+
+<style>
+
+.div-marco{
+
+border: blue solid;
+background-color:yellowgreen;
+
+}
+.fondo-body{
+
+background-color:yellow;
+
+}
+
+.fondo-body2{
+
+background-color:blue;
+
+}
+
+</style>
+
+
+</body>
+</html>

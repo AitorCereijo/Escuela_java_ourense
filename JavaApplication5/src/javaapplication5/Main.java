@@ -18,7 +18,7 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        double [] arrayA={1,2,3,4,5,};
+        double [] arrayA={1,2,3,4,5};
         double [] arrayB={2,3,4,5,6};
         
         //COORDENADAS
