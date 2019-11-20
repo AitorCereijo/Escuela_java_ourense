@@ -20,7 +20,26 @@
 
 <br/>
 
+<div onclick="alert ('Llamada evento desde html');">
+Zona onclick="alert();
+</div>
+<div id="quiereunClick">
+Zona elemDom.onclick=function(){}
+</div>
+
 <script>
+
+    window.addEventListener("load",function(){
+
+        let quiereunClick=document.getElementById("quiereunClick");
+
+        quiereunClick.onclick = function(evento){
+
+            alert("'Llamada evento desde JS, propiedad .onclick'");
+
+        }
+
+    });
 
 /*
 let input_listo=document.getElementById("input_listo");
@@ -38,27 +57,35 @@ boton_listo2.addEventListener("click", funAlPulsar);
 boton_listo2.addEventListener("click", funAlpulsar_dos);*/
 
 
-
-
 function Gestor(input,boton,div){
-    
-    this.boton=document.getElementById(boton);
-    boton.addEventListener("click",funAlPulsar);
 
-    let div=document.getElementById(div);
     this.input=document.getElementById(input);
+    this.boton=document.getElementById(boton);
+    this.div=document.getElementById(div);
+    this.boton.value="Pulsa";
+    this.input.value="Se ha cogido el INPUT";
 
 this.funAlPulsar=function(evento){
 
     this.input.value="Muy bien "+evento.type;
-    div.innerHTML+="evento.currentTarget.id= "+evento.currentTarget.id;
-    div.className="div-marco";
+    this.div.innerHTML+="evento.currentTarget.id= "+evento.currentTarget.id;
+    this.div.className="div-marco";
     
 }
+
+funAlPulsar2 = (evento) => {
+
+    this.input.style="background-color:lightblue;";
+   
+    }
+
+    this.boton.addEventListener("click",this.funAlPulsar.bind(this));
+    this.boton.addEventListener("click",this.funAlPulsar2);
+   
 }
 
-var gestor1=new Gestor("input_listo","boton_listo","info_evento");
-var gestor2=new Gestor("input_listo2","boton_listo2","info_evento2");
+let gestor1=new Gestor("input_listo","boton_listo","info_evento");
+let gestor2=new Gestor("input_listo2","boton_listo2","info_evento2");
 
 /*
 function funAlPulsar(evento){
