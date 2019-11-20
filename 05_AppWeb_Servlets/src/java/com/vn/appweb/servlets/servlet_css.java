@@ -23,9 +23,11 @@ public class servlet_css extends HttpServlet {
             
      salida.print(".color-rojo{background-color:red}");
      
+      int x=5;
       for (int i = 0; i < 10; i++) {
-            
-            salida.print(".tamaño-"+i+"{font-size:"+i+"px}");
+           
+            salida.print(".tamaño-"+i+"{font-size:"+x+"px}");
+            x=x+5;
         }
      
      
