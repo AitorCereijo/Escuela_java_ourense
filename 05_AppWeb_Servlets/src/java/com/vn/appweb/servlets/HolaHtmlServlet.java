@@ -35,8 +35,8 @@ public class HolaHtmlServlet extends HttpServlet {
         }
         salida.print("</ul>");
         
-        salida.print("</br>Ruta: "+peticionHttp.getContextPath());
-        salida.print("</br>Metodo: "+peticionHttp.getMethod());
+        salida.print("</br>Ruta: "+peticionHttp.getContextPath());//VER RUTA
+        salida.print("</br>Metodo: "+peticionHttp.getMethod());//VER QUE METODO SE USA
      
          salida.print("</body>");
         salida.print("</html>");
