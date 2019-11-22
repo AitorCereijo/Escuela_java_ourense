@@ -20,8 +20,6 @@ import javax.servlet.http.HttpServletResponse;
  * @author Equipo 4
  */
 public class ParamServlet extends HttpServlet {
-        
-           
 
     @Override
     protected void doGet(HttpServletRequest peticion, HttpServletResponse respuesta)
@@ -46,9 +44,7 @@ public class ParamServlet extends HttpServlet {
             out.println("<input required type='email' id='email' name='email'/>");
             out.println("<input type='submit' value='Enviar'/>");
             out.println("</form>");
-            
-    
-         
+   
     }}
 
     
@@ -70,7 +66,6 @@ public class ParamServlet extends HttpServlet {
             out.println("<h1>FORMULARIO DE REGISTRO</h1>");
             //NOMBRE E EMAIL OBLIGATORIOS
             
-            
             String valorCampo=peticion.getParameter("nombre_campo");
             String valorCampo2=peticion.getParameter("email");
             
@@ -83,7 +78,6 @@ public class ParamServlet extends HttpServlet {
                 
             }
             
-           
             else{
             
                out.print("<p style='color:green'>Se ha recibido el nombre: "+nombre.toUpperCase()+" </p>");
@@ -99,6 +93,7 @@ public class ParamServlet extends HttpServlet {
                 DriverManager.registerDriver(new org.apache.derby.jdbc.EmbeddedDriver());
             
             }   
+            
             catch (Exception ex) {
                     Logger.getLogger(ParamServlet.class.getName()).log(Level.SEVERE, null, ex);
                     out.println("\"<p style='color:green'>No se ha cargado: \"+email.toLowerCase()+\" </p>\"");
@@ -109,9 +104,9 @@ public class ParamServlet extends HttpServlet {
                 String sqlQuery="INSERT INTO persona (nombre,email) VALUES ('"+nombre+"','"+email+"')";   
                 Statement sentenciaSQL= con.createStatement();
                 sentenciaSQL.executeUpdate(sqlQuery);
-                
-                
+              
             }  
+            
             catch (SQLException ex) {
                     Logger.getLogger(ParamServlet.class.getName()).log(Level.SEVERE, null, ex);
                      out.println("\"<p style='color:green'>Error SQL:"+ex.getMessage()+
