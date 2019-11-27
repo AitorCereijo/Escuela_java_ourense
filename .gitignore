@@ -43,3 +43,5 @@ nbdist/
 05_AppWeb_Servlets/lib/db-derby-10.14.2.0-bin/test
 05_AppWeb_Servlets/lib/db-derby-10.14.2.0-bin/index.html
 05_AppWeb_Servlets/lib/db-derby-10.14.2.0-bin/KEYS
+/.metadata/
+/08_MVN_ModeloUsuario/target/
