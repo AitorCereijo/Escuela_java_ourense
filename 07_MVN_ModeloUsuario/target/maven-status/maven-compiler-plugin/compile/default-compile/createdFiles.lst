@@ -1,0 +1,7 @@
+com\vn\appusuarios\modelo\Usuario.class
+com\vn\appusuarios\modelo\dao\IGenericDao.class
+com\vn\appusuarios\modelo\dao\UsuariosDAO.class
+com\vn\appusuarios\modelo\dao\ConexionDerbyDB.class
+com\vn\appusuarios\modelo\dao\ConexionMySqlDB.class
+com\vn\appusuarios\modelo\logica\ServicioUsuarios.class
+com\vn\appusuarios\modelo\logica\ChivatoServicios.class
