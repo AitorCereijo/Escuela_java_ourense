@@ -68,6 +68,12 @@ public class UsuariosServlet extends HttpServlet {
         else{ request.getRequestDispatcher("registrarse.jsp").forward(request, response);}
         
       
+        }else if(request.getMethod() == "GET") {
+        	// Habria tambien que comprobar la password
+        	
+        	Usuario usuario = srv.leerUno(email);
+        	request.getSession().setAttribute("usuario",usuario);
+        	
         }
         
     }
