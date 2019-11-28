@@ -8,11 +8,11 @@
 <%@page import="com.vn.appusuarios.modelo.logica.ServicioUsuarios"%>
 <%
 ServicioUsuarios servicioU = (ServicioUsuarios)request.getAttribute("servicioUsu");
-Usuario usuario = (Usuario) session.getAttribute("usuario");
 %>
 <html>
  <%= head() %>
     <body>
+    <%@include file="header.jsp" %>
         <h1>Registrado correctamente</h1>
 <!--         <h2 style="color:green"> -->
             
